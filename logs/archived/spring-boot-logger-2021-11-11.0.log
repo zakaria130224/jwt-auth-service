@@ -1,0 +1,77 @@
+2021-11-11 23:59:49,169 INFO org.springframework.boot.StartupInfoLogger Line: 55 [] : Starting JsonTokenAuthServiceApplication using Java 1.8.0_231 on LAPTOP-LHPF6IVR with PID 19468 (D:\WorkStation\json_token_auth_service\target\classes started by USER in D:\WorkStation\json_token_auth_service)
+2021-11-11 23:59:49,169 INFO org.springframework.boot.SpringApplication Line: 659 [] : No active profile set, falling back to default profiles: default
+2021-11-11 23:59:49,856 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate Line: 132 [] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-11 23:59:49,919 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate Line: 201 [] : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2021-11-11 23:59:50,184 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line: 376 [] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@51745f40' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 23:59:50,184 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line: 376 [] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-11 23:59:50,403 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line: 108 [] : Tomcat initialized with port(s): 8080 (http)
+2021-11-11 23:59:50,419 INFO org.apache.juli.logging.DirectJDKLog Line: 173 [] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-11 23:59:50,419 INFO org.apache.juli.logging.DirectJDKLog Line: 173 [] : Starting service [Tomcat]
+2021-11-11 23:59:50,419 INFO org.apache.juli.logging.DirectJDKLog Line: 173 [] : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-11 23:59:50,545 INFO org.apache.juli.logging.DirectJDKLog Line: 173 [] : Initializing Spring embedded WebApplicationContext
+2021-11-11 23:59:50,545 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Line: 290 [] : Root WebApplicationContext: initialization completed in 1345 ms
+2021-11-11 23:59:50,608 DEBUG com.zaxxer.hikari.HikariConfig Line: 971 [] : Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+
+2021-11-11 23:59:50,733 INFO org.hibernate.jpa.internal.util.LogHelper Line: 31 [] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-11 23:59:50,779 INFO org.hibernate.Version Line: 44 [] : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-11 23:59:50,936 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager Line: 56 [] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1103 [] : HikariPool-1 - configuration:
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : allowPoolSuspension................................false
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : autoCommit................................true
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : catalog................................none
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : connectionInitSql................................none
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : connectionTestQuery................................none
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : connectionTimeout................................30000
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : dataSource................................none
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : dataSourceClassName................................none
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : dataSourceJNDI................................none
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : dataSourceProperties................................{password=<masked>}
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : driverClassName................................"com.mysql.cj.jdbc.Driver"
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : exceptionOverrideClassName................................none
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : healthCheckProperties................................{}
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : healthCheckRegistry................................none
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : idleTimeout................................600000
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : initializationFailTimeout................................1
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : isolateInternalQueries................................false
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : jdbcUrl................................jdbc:mysql://localhost:3306/test?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : keepaliveTime................................0
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : leakDetectionThreshold................................0
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : maxLifetime................................1800000
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : maximumPoolSize................................5
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : metricRegistry................................none
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : metricsTrackerFactory................................none
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : minimumIdle................................5
+2021-11-11 23:59:51,108 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : password................................<masked>
+2021-11-11 23:59:51,123 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : poolName................................"HikariPool-1"
+2021-11-11 23:59:51,123 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : readOnly................................false
+2021-11-11 23:59:51,123 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : registerMbeans................................false
+2021-11-11 23:59:51,123 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : scheduledExecutor................................none
+2021-11-11 23:59:51,123 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : schema................................none
+2021-11-11 23:59:51,123 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : threadFactory................................internal
+2021-11-11 23:59:51,123 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : transactionIsolation................................default
+2021-11-11 23:59:51,123 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : username................................"root"
+2021-11-11 23:59:51,123 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : validationTimeout................................5000
+2021-11-11 23:59:51,123 INFO com.zaxxer.hikari.HikariDataSource Line: 110 [] : HikariPool-1 - Starting...
+2021-11-11 23:59:51,717 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 565 [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25673087
+2021-11-11 23:59:51,717 INFO com.zaxxer.hikari.HikariDataSource Line: 123 [] : HikariPool-1 - Start completed.
+2021-11-11 23:59:51,748 INFO org.hibernate.dialect.Dialect Line: 175 [] : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-11-11 23:59:51,826 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2021-11-11 23:59:51,827 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator Line: 729 [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bea3ff0
+2021-11-11 23:59:51,827 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator Line: 729 [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ad735cb
+2021-11-11 23:59:51,827 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator Line: 729 [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6bc7cf33
+2021-11-11 23:59:51,843 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator Line: 729 [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3af8ca84
+2021-11-11 23:59:51,843 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - After adding stats (total=5, active=0, idle=5, waiting=0)
+2021-11-11 23:59:52,620 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator Line: 52 [] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-11 23:59:52,636 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean Line: 437 [] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 23:59:53,022 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration Line: 219 [] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 23:59:53,204 INFO org.springframework.security.web.DefaultSecurityFilterChain Line: 51 [] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3719360c, org.springframework.security.web.context.SecurityContextPersistenceFilter@71bb8b34, org.springframework.security.web.header.HeaderWriterFilter@38c460e8, org.springframework.security.web.authentication.logout.LogoutFilter@1cee2e10, com.example.json_token_auth_service.Security.JwtRequestFilter@2e952845, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@383cdd4d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@100bba26, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3afca2c, org.springframework.security.web.session.SessionManagementFilter@3dc39459, org.springframework.security.web.access.ExceptionTranslationFilter@375084c9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3cf55e0c]
+2021-11-11 23:59:53,547 INFO org.apache.juli.logging.DirectJDKLog Line: 173 [] : Starting ProtocolHandler ["http-nio-8080"]
+2021-11-11 23:59:53,563 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line: 220 [] : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-11 23:59:53,735 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper Line: 137 [] : SQL Error: 1062, SQLState: 23000
+2021-11-11 23:59:53,735 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper Line: 142 [] : Duplicate entry 'zaka1324-zakaria@gmail.com' for key 'UK5an6eeanlr5cekleo5odihut8'
+2021-11-11 23:59:53,844 ERROR com.example.json_token_auth_service.DBUtil.APIUserSeeder Line: 52 [] : could not execute statement; SQL [n/a]; constraint [UK5an6eeanlr5cekleo5odihut8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2021-11-11 23:59:53,844 INFO org.springframework.boot.StartupInfoLogger Line: 61 [] : Started JsonTokenAuthServiceApplication in 5.186 seconds (JVM running for 6.206)
