@@ -11,5 +11,5 @@ import javax.persistence.MappedSuperclass;
 @ToString
 @MappedSuperclass
 public class ResponseBaseEntity {
-    private ResponseDetails responseDetails;
+    private ResponseDetails responseStatus;
 }

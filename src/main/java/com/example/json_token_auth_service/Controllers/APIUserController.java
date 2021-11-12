@@ -37,7 +37,7 @@ public class APIUserController {
 
 @RequestMapping(value = "/adduser",method = RequestMethod.POST)
 public ResponseEntity<?> addAPIUser( @RequestBody ReqAddUser reqAddUser) throws JSONException {
-   // apiUser.setId(2);
+
     try {
         //Add user
         APIUser apiUser=reqAddUser.getUserdata();

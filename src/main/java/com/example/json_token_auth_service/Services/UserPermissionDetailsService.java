@@ -37,15 +37,41 @@ public class UserPermissionDetailsService {
                         resTokenVerify.setHasPermission(true);
 
                 }
+                if(resTokenVerify.isValidUser() && resTokenVerify.isHasPermission())
+                    resTokenVerify.setResponseStatus(new ResponseDetails(1000,"Success"));
+                else if(!resTokenVerify.isValidUser() && resTokenVerify.isHasPermission())
+                    resTokenVerify.setResponseStatus(new ResponseDetails(1001,"Failed"));
+                else if(resTokenVerify.isValidUser() && !resTokenVerify.isHasPermission())
+                    resTokenVerify.setResponseStatus(new ResponseDetails(1002,"Failed"));
+                else if(!resTokenVerify.isValidUser() && !resTokenVerify.isHasPermission())
+                    resTokenVerify.setResponseStatus(new ResponseDetails(1003,"Failed"));
+            }else {
+                resTokenVerify.setResponseStatus(new ResponseDetails(9001,"User not found!"));
             }
 
         } catch (IllegalArgumentException e) {
             System.out.println("Unable to get JWT Token");
-            resTokenVerify.setResponseDetails(new ResponseDetails(9001,"Unable to get JWT Token"));
+            resTokenVerify.setResponseStatus(new ResponseDetails(9002,"Unable to get JWT Token"));
         } catch (ExpiredJwtException e) {
             System.out.println("JWT Token has expired");
-            resTokenVerify.setResponseDetails(new ResponseDetails(9001,e.getMessage()));
+            resTokenVerify.setResponseStatus(new ResponseDetails(9003,e.getMessage()));
         }
         return resTokenVerify;
+    }
+
+    public boolean isParmited(String username,String uri){
+        APIUser apiUser= apiUserRepository.findByUserName(username).stream().findFirst().orElse(null);
+        if(apiUser!=null) {
+            if (username.equals(apiUser.getUserName())) {
+                UserPermission userPermission = userPermissionRepository.findByUserId(apiUser.getId())
+                        .stream()
+                        .filter(x -> x.getUri().equals(uri))
+                        .findFirst().orElse(null);
+                if (userPermission != null)
+                    return true;
+
+            }
+        }
+        return false;
     }
 }

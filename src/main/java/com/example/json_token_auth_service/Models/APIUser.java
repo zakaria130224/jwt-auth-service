@@ -29,6 +29,9 @@ public class APIUser extends BaseEntity {
 	@Column(name = "email")
 	String email;
 
+	@Column(name = "role")
+	String role="USER";
+
 
 
 	public APIUser(){}
@@ -38,5 +41,13 @@ public class APIUser extends BaseEntity {
 		this.password = password;
 		this.plainPassword = plainPassword;
 		this.email = email;
+	}
+
+	public APIUser(String userName, String password, String plainPassword, String email, String role) {
+		this.userName = userName;
+		this.password = password;
+		this.plainPassword = plainPassword;
+		this.email = email;
+		this.role = role;
 	}
 }

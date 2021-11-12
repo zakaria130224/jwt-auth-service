@@ -1,6 +1,8 @@
 package com.example.json_token_auth_service.Security;
 
+import com.example.json_token_auth_service.Repositories.UserPermissionRepository;
 import com.example.json_token_auth_service.Services.APIUserService;
+import com.example.json_token_auth_service.Services.UserPermissionDetailsService;
 import io.jsonwebtoken.ExpiredJwtException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,6 +30,9 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 	@Autowired
 	private JwtTokenUtil jwtTokenUtil;
 
+	@Autowired
+	UserPermissionDetailsService userPermissionDetailsService;
+
 	@Override
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
 			throws ServletException, IOException {
@@ -49,6 +54,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 		} else {
 			logger.warn("JWT Token does not begin with Bearer String");
 		}
+
 		// Once we get the token validate it.
 		if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
 			UserDetails userDetails = this.jwtUserDetailsService.loadUserByUsername(username);
@@ -62,9 +68,13 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 				// After setting the Authentication in the context, we specify
 				// that the current user is authenticated. So it passes the
 				// Spring Security Configurations successfully.
-				SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
+				if (userPermissionDetailsService.isParmited(userDetails.getUsername(),request.getRequestURI()))
+					SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
 			}
 		}
+
+
+			//request.setAttribute("access denied", "Not an ADMIN user!");
 		//MDC Configuration
 		String uuid = UUID.randomUUID().toString();
 		MDC.put("loggerId",uuid );

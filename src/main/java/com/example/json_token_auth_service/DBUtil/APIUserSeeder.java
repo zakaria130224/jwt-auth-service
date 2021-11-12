@@ -2,7 +2,9 @@ package com.example.json_token_auth_service.DBUtil;
 
 
 import com.example.json_token_auth_service.Models.APIUser;
+import com.example.json_token_auth_service.Models.UserPermission;
 import com.example.json_token_auth_service.Repositories.APIUserRepository;
+import com.example.json_token_auth_service.Repositories.UserPermissionRepository;
 import com.example.json_token_auth_service.Security.PasswordSecurity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +26,9 @@ class APIUserSeeder implements ApplicationListener<ContextRefreshedEvent> {
     @Autowired
     private PasswordSecurity passwordSecurity;
 
+    @Autowired
+    private UserPermissionRepository userPermissionRepository;
+
     public APIUserSeeder(APIUserRepository apiUserRepository, PasswordSecurity passwordSecurity) {
         this.apiUserRepository = apiUserRepository;
         this.passwordSecurity = passwordSecurity;
@@ -40,12 +45,14 @@ class APIUserSeeder implements ApplicationListener<ContextRefreshedEvent> {
     private void seedAPIUser()
     {
         List<APIUser> apiUsers = new ArrayList() {{
-            add(new APIUser("zaka1324",passwordSecurity.encryptThisString("zaka1324"),"zaka1324","zakaria@gmail.com"));
-            add(new APIUser("jeba",passwordSecurity.encryptThisString("jeba2021"),"jeba2021","jeba@gmail.com"));
+            add(new APIUser("admin",passwordSecurity.encryptThisString("admin@2021"),"admin@2021","admin@gmail.com","ADMIN"));
+            add(new APIUser("test001",passwordSecurity.encryptThisString("test001@2021"),"test001@2021","test001@gmail.com"));
 
         }};
+
         try{
             apiUserRepository.saveAll(apiUsers);
+            userPermissionRepository.save(new UserPermission(1,"Test","/adduser"));
         }
         catch (Exception ex)
         {
