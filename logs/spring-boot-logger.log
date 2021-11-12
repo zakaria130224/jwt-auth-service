@@ -4248,3 +4248,17 @@ sun.misc.Launcher$AppClassLoader@18b4aac2
 2021-11-12 21:32:50,748 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
 2021-11-12 21:33:20,761 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
 2021-11-12 21:33:20,762 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:33:50,773 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:33:50,773 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:34:20,800 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:34:20,801 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:34:50,812 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:34:50,814 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:35:20,819 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:35:20,819 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:35:50,828 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:35:50,828 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:36:20,838 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:36:20,839 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:36:50,841 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:36:50,842 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.

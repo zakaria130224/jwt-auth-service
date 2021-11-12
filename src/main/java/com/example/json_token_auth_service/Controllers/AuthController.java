@@ -35,10 +35,8 @@ public class AuthController {
 	private UserPermissionDetailsService userDetailsService;
 
 
-	@RequestMapping(value = "/authenticate", method = RequestMethod.GET)
+	@RequestMapping(value = "/getToken", method = RequestMethod.GET)
 	public ResponseEntity<?> createAuthenticationToken(@RequestHeader String username, @RequestHeader String password) throws Exception {
-
-		//authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
 
 		final UserDetails userDetails = apiUserService
 				.loadUserByUsernameAndPassword(username,passwordSecurity.encryptThisString(password) );
@@ -50,7 +48,7 @@ public class AuthController {
 		return ResponseEntity.ok(new JwtResponse(token,expTime));
 	}
 
-	@PostMapping("/verify")
+	@PostMapping("/verifyToken")
 	public ResponseEntity<?> verifyToken(HttpServletRequest request,@RequestBody ReqTokenVerify reqTokenVerify)
 	{
 //		ResTokenVerify resTokenVerify=new ResTokenVerify();
