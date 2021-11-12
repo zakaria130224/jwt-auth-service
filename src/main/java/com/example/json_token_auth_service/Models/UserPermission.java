@@ -1,16 +1,13 @@
 package com.example.json_token_auth_service.Models;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-@Getter
-@Setter
-@ToString
+@Data
+@NoArgsConstructor
 @Entity
 @Table(name = "API_USERS_PERMISSION")
 public class UserPermission extends BaseEntity {
@@ -22,4 +19,11 @@ public class UserPermission extends BaseEntity {
 
     @Column(name ="uri")
     private String uri;
+
+
+    public UserPermission(int userId, String application, String uri) {
+        this.userId = userId;
+        this.application = application;
+        this.uri = uri;
+    }
 }

@@ -25,5 +25,5 @@ public class BaseEntity {
     private Date lastModifiedAt;
 
     @Column(name = "isActive",columnDefinition = "boolean default true")
-    private boolean isActive;
+    private boolean isActive=true;
 }
