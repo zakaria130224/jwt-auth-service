@@ -1,5 +1,6 @@
 package com.example.json_token_auth_service.Models;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -9,9 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
-@Getter
-@Setter
-@ToString
+@Data
 @Entity
 @Table(name = "API_USERS",uniqueConstraints = {@UniqueConstraint(columnNames = {"username", "email"})})
 public class APIUser extends BaseEntity {
