@@ -4262,3 +4262,133 @@ sun.misc.Launcher$AppClassLoader@18b4aac2
 2021-11-12 21:36:20,839 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
 2021-11-12 21:36:50,841 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
 2021-11-12 21:36:50,842 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:37:20,854 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:37:20,855 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:37:21,931 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean Line: 651 [] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 21:37:21,931 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl Line: 526 [] : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-11-12 21:37:22,109 INFO com.zaxxer.hikari.HikariDataSource Line: 350 [] : HikariPool-1 - Shutdown initiated...
+2021-11-12 21:37:22,110 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Before shutdown stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:37:22,124 DEBUG com.zaxxer.hikari.pool.PoolBase Line: 134 [] : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@47fcefb3: (connection evicted)
+2021-11-12 21:37:22,132 DEBUG com.zaxxer.hikari.pool.PoolBase Line: 134 [] : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2c8028a1: (connection evicted)
+2021-11-12 21:37:22,136 DEBUG com.zaxxer.hikari.pool.PoolBase Line: 134 [] : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5821bf78: (connection evicted)
+2021-11-12 21:37:22,138 DEBUG com.zaxxer.hikari.pool.PoolBase Line: 134 [] : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4bbadab: (connection evicted)
+2021-11-12 21:37:22,139 DEBUG com.zaxxer.hikari.pool.PoolBase Line: 134 [] : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@de33116: (connection evicted)
+2021-11-12 21:37:22,140 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2021-11-12 21:37:22,140 INFO com.zaxxer.hikari.HikariDataSource Line: 352 [] : HikariPool-1 - Shutdown completed.
+2021-11-12 21:37:29,093 INFO org.springframework.boot.StartupInfoLogger Line: 55 [] : Starting JsonTokenAuthServiceApplication using Java 1.8.0_231 on LAPTOP-LHPF6IVR with PID 20564 (D:\WorkStation\json_token_auth_service\target\classes started by USER in D:\WorkStation\json_token_auth_service)
+2021-11-12 21:37:29,098 INFO org.springframework.boot.SpringApplication Line: 659 [] : No active profile set, falling back to default profiles: default
+2021-11-12 21:37:29,891 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate Line: 132 [] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 21:37:29,955 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate Line: 201 [] : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2021-11-12 21:37:30,270 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line: 376 [] : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3804a9a8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 21:37:30,275 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line: 376 [] : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 21:37:30,500 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line: 108 [] : Tomcat initialized with port(s): 8080 (http)
+2021-11-12 21:37:30,509 INFO org.apache.juli.logging.DirectJDKLog Line: 173 [] : Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-12 21:37:30,510 INFO org.apache.juli.logging.DirectJDKLog Line: 173 [] : Starting service [Tomcat]
+2021-11-12 21:37:30,510 INFO org.apache.juli.logging.DirectJDKLog Line: 173 [] : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 21:37:30,636 INFO org.apache.juli.logging.DirectJDKLog Line: 173 [] : Initializing Spring embedded WebApplicationContext
+2021-11-12 21:37:30,637 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Line: 290 [] : Root WebApplicationContext: initialization completed in 1473 ms
+2021-11-12 21:37:30,733 DEBUG com.zaxxer.hikari.HikariConfig Line: 971 [] : Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+sun.misc.Launcher$AppClassLoader@18b4aac2
+
+2021-11-12 21:37:30,856 INFO org.hibernate.jpa.internal.util.LogHelper Line: 31 [] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 21:37:30,906 INFO org.hibernate.Version Line: 44 [] : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 21:37:31,120 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager Line: 56 [] : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 21:37:31,221 DEBUG com.zaxxer.hikari.HikariConfig Line: 1103 [] : HikariPool-1 - configuration:
+2021-11-12 21:37:31,224 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : allowPoolSuspension................................false
+2021-11-12 21:37:31,224 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : autoCommit................................true
+2021-11-12 21:37:31,225 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : catalog................................none
+2021-11-12 21:37:31,225 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : connectionInitSql................................none
+2021-11-12 21:37:31,225 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : connectionTestQuery................................none
+2021-11-12 21:37:31,225 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : connectionTimeout................................30000
+2021-11-12 21:37:31,226 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : dataSource................................none
+2021-11-12 21:37:31,226 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : dataSourceClassName................................none
+2021-11-12 21:37:31,226 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : dataSourceJNDI................................none
+2021-11-12 21:37:31,227 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : dataSourceProperties................................{password=<masked>}
+2021-11-12 21:37:31,227 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : driverClassName................................"com.mysql.cj.jdbc.Driver"
+2021-11-12 21:37:31,227 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : exceptionOverrideClassName................................none
+2021-11-12 21:37:31,227 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : healthCheckProperties................................{}
+2021-11-12 21:37:31,228 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : healthCheckRegistry................................none
+2021-11-12 21:37:31,228 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : idleTimeout................................600000
+2021-11-12 21:37:31,229 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : initializationFailTimeout................................1
+2021-11-12 21:37:31,229 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : isolateInternalQueries................................false
+2021-11-12 21:37:31,230 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : jdbcUrl................................jdbc:mysql://localhost:3306/test?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+2021-11-12 21:37:31,230 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : keepaliveTime................................0
+2021-11-12 21:37:31,230 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : leakDetectionThreshold................................0
+2021-11-12 21:37:31,230 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : maxLifetime................................1800000
+2021-11-12 21:37:31,231 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : maximumPoolSize................................5
+2021-11-12 21:37:31,231 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : metricRegistry................................none
+2021-11-12 21:37:31,231 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : metricsTrackerFactory................................none
+2021-11-12 21:37:31,232 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : minimumIdle................................5
+2021-11-12 21:37:31,232 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : password................................<masked>
+2021-11-12 21:37:31,232 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : poolName................................"HikariPool-1"
+2021-11-12 21:37:31,233 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : readOnly................................false
+2021-11-12 21:37:31,233 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : registerMbeans................................false
+2021-11-12 21:37:31,233 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : scheduledExecutor................................none
+2021-11-12 21:37:31,233 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : schema................................none
+2021-11-12 21:37:31,234 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : threadFactory................................internal
+2021-11-12 21:37:31,234 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : transactionIsolation................................default
+2021-11-12 21:37:31,234 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : username................................"root"
+2021-11-12 21:37:31,235 DEBUG com.zaxxer.hikari.HikariConfig Line: 1135 [] : validationTimeout................................5000
+2021-11-12 21:37:31,235 INFO com.zaxxer.hikari.HikariDataSource Line: 110 [] : HikariPool-1 - Starting...
+2021-11-12 21:37:31,357 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 565 [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7364f68
+2021-11-12 21:37:31,359 INFO com.zaxxer.hikari.HikariDataSource Line: 123 [] : HikariPool-1 - Start completed.
+2021-11-12 21:37:31,379 INFO org.hibernate.dialect.Dialect Line: 175 [] : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-11-12 21:37:31,474 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2021-11-12 21:37:31,478 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator Line: 729 [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@535fe8cf
+2021-11-12 21:37:31,481 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator Line: 729 [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2781c8ea
+2021-11-12 21:37:31,484 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator Line: 729 [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1068a659
+2021-11-12 21:37:31,488 DEBUG com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator Line: 729 [] : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@723c995c
+2021-11-12 21:37:31,488 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - After adding stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:37:32,496 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator Line: 52 [] : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 21:37:32,513 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean Line: 437 [] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 21:37:32,948 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration Line: 219 [] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-12 21:37:33,136 INFO org.springframework.security.web.DefaultSecurityFilterChain Line: 51 [] : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23263ba, org.springframework.security.web.context.SecurityContextPersistenceFilter@716e6fa5, org.springframework.security.web.header.HeaderWriterFilter@6ed7b9c5, org.springframework.security.web.authentication.logout.LogoutFilter@6d4d0a14, com.example.json_token_auth_service.Security.JwtRequestFilter@3856d0cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1885dc2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e1ea16d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ca6bd01, org.springframework.security.web.session.SessionManagementFilter@3494a35e, org.springframework.security.web.access.ExceptionTranslationFilter@2cd52eda, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1dadd172]
+2021-11-12 21:37:33,518 INFO org.apache.juli.logging.DirectJDKLog Line: 173 [] : Starting ProtocolHandler ["http-nio-8080"]
+2021-11-12 21:37:33,535 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line: 220 [] : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-12 21:37:33,676 INFO org.springframework.boot.StartupInfoLogger Line: 61 [] : Started JsonTokenAuthServiceApplication in 5.035 seconds (JVM running for 6.422)
+2021-11-12 21:37:42,493 INFO org.apache.juli.logging.DirectJDKLog Line: 173 [] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-12 21:37:42,493 INFO org.springframework.web.servlet.FrameworkServlet Line: 525 [] : Initializing Servlet 'dispatcherServlet'
+2021-11-12 21:37:42,494 INFO org.springframework.web.servlet.FrameworkServlet Line: 547 [] : Completed initialization in 1 ms
+2021-11-12 21:37:42,515 WARN com.example.json_token_auth_service.Security.JwtRequestFilter Line: 55 [] : JWT Token does not begin with Bearer String
+2021-11-12 21:37:42,515 INFO com.example.json_token_auth_service.Security.JwtRequestFilter Line: 81 [1bb85ad5-cfae-479a-9f2e-b99bcbc54928] : Request Url: /verifyToken
+2021-11-12 21:37:59,273 WARN com.example.json_token_auth_service.Security.JwtRequestFilter Line: 55 [] : JWT Token does not begin with Bearer String
+2021-11-12 21:37:59,273 INFO com.example.json_token_auth_service.Security.JwtRequestFilter Line: 81 [8d8891b4-a9ea-4047-98c9-4eaa3d51b1ec] : Request Url: /getToken
+2021-11-12 21:38:01,489 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:38:01,490 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:38:04,131 WARN com.example.json_token_auth_service.Security.JwtRequestFilter Line: 55 [] : JWT Token does not begin with Bearer String
+2021-11-12 21:38:04,131 INFO com.example.json_token_auth_service.Security.JwtRequestFilter Line: 81 [213c2b17-9c50-4327-b029-6ce98cabe851] : Request Url: /verifyToken
+2021-11-12 21:38:31,499 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:38:31,499 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:39:01,521 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:39:01,522 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:39:31,538 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:39:31,539 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:40:01,553 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:40:01,553 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:40:31,565 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:40:31,565 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:41:01,584 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:41:01,585 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:41:31,597 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:41:31,597 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:42:01,598 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:42:01,599 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:42:31,604 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:42:31,605 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:43:01,615 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:43:01,616 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:43:31,627 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Pool stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:43:31,628 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 518 [] : HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2021-11-12 21:43:38,813 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean Line: 651 [] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 21:43:38,816 INFO com.zaxxer.hikari.HikariDataSource Line: 350 [] : HikariPool-1 - Shutdown initiated...
+2021-11-12 21:43:38,816 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - Before shutdown stats (total=5, active=0, idle=5, waiting=0)
+2021-11-12 21:43:38,816 DEBUG com.zaxxer.hikari.pool.PoolBase Line: 134 [] : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7364f68: (connection evicted)
+2021-11-12 21:43:38,820 DEBUG com.zaxxer.hikari.pool.PoolBase Line: 134 [] : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@535fe8cf: (connection evicted)
+2021-11-12 21:43:38,821 DEBUG com.zaxxer.hikari.pool.PoolBase Line: 134 [] : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2781c8ea: (connection evicted)
+2021-11-12 21:43:38,821 DEBUG com.zaxxer.hikari.pool.PoolBase Line: 134 [] : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1068a659: (connection evicted)
+2021-11-12 21:43:38,821 DEBUG com.zaxxer.hikari.pool.PoolBase Line: 134 [] : HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@723c995c: (connection evicted)
+2021-11-12 21:43:38,821 DEBUG com.zaxxer.hikari.pool.HikariPool Line: 421 [] : HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2021-11-12 21:43:38,822 INFO com.zaxxer.hikari.HikariDataSource Line: 352 [] : HikariPool-1 - Shutdown completed.
