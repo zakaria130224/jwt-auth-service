@@ -7,7 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class ResTokenVerify extends ResponseBaseEntity {
+public class ResTokenVerify extends ResponseHeader {
     ReqTokenVerify reqTokenVerify;
     boolean isValidUser, hasPermission;
 }

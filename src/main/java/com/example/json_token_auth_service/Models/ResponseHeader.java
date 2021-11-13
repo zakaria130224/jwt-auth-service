@@ -10,6 +10,6 @@ import javax.persistence.MappedSuperclass;
 @Setter
 @ToString
 @MappedSuperclass
-public class ResponseBaseEntity {
+public class ResponseHeader {
     private ResponseDetails responseStatus;
 }
