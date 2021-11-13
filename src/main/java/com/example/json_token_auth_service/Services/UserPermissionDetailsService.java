@@ -27,6 +27,12 @@ public class UserPermissionDetailsService {
             APIUser apiUser= apiUserRepository.findByUserName(username).stream().findFirst().orElse(null);
             if(apiUser!=null)
             {
+                if (apiUser.getRole().equalsIgnoreCase("ADMIN"))
+                {
+                    resTokenVerify.setResponseStatus(new ResponseDetails(1000,"Success"));
+                    resTokenVerify.setValidUser(true);
+                    resTokenVerify.setHasPermission(true);
+                }
                 if (username.equals(apiUser.getUserName())){
                     resTokenVerify.setValidUser(true);
                     UserPermission userPermission=userPermissionRepository.findByUserId(apiUser.getId())
@@ -61,6 +67,8 @@ public class UserPermissionDetailsService {
 
     public boolean isParmited(String username,String uri){
         APIUser apiUser= apiUserRepository.findByUserName(username).stream().findFirst().orElse(null);
+        if (apiUser.getRole().equalsIgnoreCase("ADMIN"))
+            return true;
         if(apiUser!=null) {
             if (username.equals(apiUser.getUserName())) {
                 UserPermission userPermission = userPermissionRepository.findByUserId(apiUser.getId())
